@@ -1,0 +1,13 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  @if $font-size-root != null {
+    font-size: var(--#{$variable-prefix}root-font-size);
+  }
+}
+
