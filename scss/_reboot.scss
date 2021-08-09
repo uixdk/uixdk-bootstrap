@@ -9,5 +9,17 @@
   @if $font-size-root != null {
     font-size: var(--#{$variable-prefix}root-font-size);
   }
+
+  @if $enable-smooth-scroll {
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--#{$variable-prefix}-body-font-family);
+  
 }
 
