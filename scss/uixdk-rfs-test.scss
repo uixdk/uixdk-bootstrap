@@ -1,0 +1,32 @@
+@import "vendor/rfs";
+
+/*
+@debug $rfs-unit;
+@debug $rfs-mode;
+@debug $rfs-base-value;
+
+@debug $rfs-breakpoint;
+
+@debug rfs-value(1rem);
+@debug rfs-value(20px);
+
+@debug rfs-fluid-value(1rem);
+@debug rfs-fluid-value(20px);
+*/
+
+/*
+*/
+body {
+  @include font-size(1.3rem);
+}
+
+/*
+@debug type-of(2rem);
+@debug str-slice(abc, 0);
+*/
+
+//@debug rfs-value(20px); 
+//@debug rfs-value(2rem); 
+
+@debug rfs-fluid-value(32px);
+@debug rfs-fluid-value(2rem);
