@@ -1,0 +1,40 @@
+<!doctype>
+<html>
+  <head>
+    <title>reboot</title>
+    <link rel="stylesheet" href="../dist/css/uixdk-bootstrap.css" />
+  </head>
+  <body>
+    <hr>
+    <h1>标题1</h1>
+    <h2>标题2</h2>
+    <h3>标题3</h3>
+    <h4>标题4</h4>
+    <h5>标题5</h5>
+    <h6>标题6</h6>
+
+    <p>段落文字</p>
+    <abbr title="abbr title">Abbr</abbr>
+    <address>Address Tag</address>
+    <ul>
+      <li>无序列表</li>
+      <li>无序列表</li>
+      <li>无序列表</li>
+      <li>无序列表</li>
+    </ul>
+    <ol>
+      <li>有序列表</li>
+      <li>有序列表</li>
+      <li>有序列表</li>
+      <li>有序列表</li>
+    </ol>
+    <dl>
+      <dt>标题</dt>
+      <dd>项目</dd>
+      <dd>项目</dd>
+    </dl>
+    <blockquote>且慢，刚才不是说中间的user.save最好不要import任何其他东西嘛？那它怎么做到能够调用fetch呢？这就需要通过接口来做依赖反转，就是在model里定义一个抽象的数据存取持久化的接口，然后再用fetch等具体方式来构造出这个接口的具体实现。</blockquote>
+    <div> 回到A和B关系的问题。<strong>在这个架构下</strong>，你用vue的optional api, composition api，或者<strong>react class</strong>组件，<b>react hooks</b>函数，有啥特别大的区别呢？其实没有。都是一层薄薄的壳子而已，主要就根据第三方组件库的丰富适用程度、团队的能力经验偏好等因素来选择了。理论上来说，vue composable 和 react hooks 的可组合能力是有一定优势的。
+    </div>
+  </body>
+</html>

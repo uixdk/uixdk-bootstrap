@@ -197,9 +197,7 @@ $rfs-mq-property-height: if($rfs-mode == max-media-query, max-height, min-height
     }
     @include _rfs-media-query {
       @debug rfs-media-query;
-      --va: 190;
       @content;
-      --va: 192;
     }
   }
 }
@@ -208,6 +206,8 @@ $rfs-mq-property-height: if($rfs-mode == max-media-query, max-height, min-height
 @function rfs-value($values) {
   // Convert to list
   $values: if(type-of($values) != list, ($values,), $values);
+
+  @debug $values;
 
   $val: '';
 
