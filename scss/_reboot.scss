@@ -136,3 +136,34 @@ b,
 strong {
   font-weight: $font-weight-bolder;
 }
+
+small {
+  @include font-size($small-font-size);
+}
+
+mark {
+  padding: $mark-padding;
+  background-color: $mark-bg;
+}
+
+sub,
+sup {
+  position: relative;
+  @include font-size($sub-sup-font-size);
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub { bottom: -.25em; }
+sup { top: -.5em; }
+
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+

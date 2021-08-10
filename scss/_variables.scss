@@ -1,6 +1,10 @@
-$white:        #fff !default;
-$gray-900:     #212529 !default;
-$black:        #000 !default;
+$white:         #fff !default;
+$gray-900:      #212529 !default;
+$black:         #000 !default;
+
+$blue:          #0d6efd; 
+
+$primary:       $blue;
 
 $variable-prefix:           bs- !default;
 
@@ -61,10 +65,21 @@ $headings-font-weight:      500 !default;
 $headings-line-height:      1.2 !default;
 $headings-color:            null !default;
 
+$link-color:                $primary !default;
+$link-decoration:           underline !default;
+$link-shade-percentage:     20% !default;
+$link-hover-color:          shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration:      null !default;
+
+$small-font-size:           .875em !default;
+$sub-sup-font-size:         .75em !default;
+
 $paragraph-margin-bottom:   1rem !default;
 
 $dt-font-weight:            $font-weight-bold;
 
 $enable-smooth-scroll:      true !default;
 
+$mark-padding:              .2em !default;
+$mark-bg:                   #fcf8e3 !default;
 
